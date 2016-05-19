@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+  <script src="semantic/dist/jquery.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="Progress.js"></script>
+</head>
+<body class="">
+  <div class="ui container">
+    <div class="main">
+    <div class="html ui top attached segment">
+     <br>
+     <br>
+     <p>1、基本使用。</p>
+  <div class="ui progress">
+    <div class="bar">   
+    </div>  
+  </div>
+
+  <p>2、百分比+说明。</p>
+  <div class="ui progress">
+    <div class="bar"> 
+    <div class="progress">10%</div>  
+    </div>  
+    <div class="label">进度条测试</div>
+  </div>
+
+<p>3、默认74%。</p>
+  <div class="ui teal progress" data-percent="74" >
+  <div class="bar"><div class="progress">74%</div>  </div>
+  <div class="label">74% Funded</div>
+  </div>
+
+
+  <p>4、不随机增长设置。</p>
+  <div class="ui teal progress" data-percent="74" data-total="20"><!--进度条分20段-->
+  <div class="bar"><div class="progress">74%</div>  </div>
+  <div class="label">74% Funded</div>
+  </div>
+  <div class="ui increment button">increment</div>
+  <div class="ui decrement button">decrement</div>
+  
+  <div class="ui top attached label">
+    <br>
+    例子 
+    <i data-content="Copy code" class="copy link icon"></i>
+  </div>
+</div>
+    </div>
+  </div>
+</body>
+</html>

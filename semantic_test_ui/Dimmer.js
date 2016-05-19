@@ -1,0 +1,22 @@
+$(document).ready(function(){	
+	var
+    $pageButton=$('.page.Button'),
+    $hideButton=$('.hide.Button'),
+    $showButton1=$('.type1.show.button'),
+    $showButton2=$('.type2.show.button'),
+    $segment1=$('.type1.segment'),
+    $segment2=$('.type2.segment'),
+    $page=$('.page.dimmer'),
+    handler;
+    handler={
+        show1:function(){$segment1.dimmer('show');},
+        show2:function(){$segment2.dimmer('show');},
+        hide:function(){$segment.dimmer('show');},
+        page:function(){$page.dimmer('show');},
+
+    };
+    $showButton1
+      .on('click',handler.show1);
+      $showButton2
+      .on('click',handler.show2);
+})

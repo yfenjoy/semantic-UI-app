@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+
+  <script src="semantic/dist/jquery.min.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="semantic/dist/tablesort.min.js"></script>
+  <script src="table.js"></script>
+
+  <style type="text/css">
+  body{
+
+    line-height: 1.1em;
+    line-height: 1.4285em;
+  }
+  .main
+  {
+    margin: 60px 0px;
+  }
+  .circular.segment
+  {
+    width: 160px;
+    height: 160px;
+  }
+  </style>
+</head>
+<body class="">
+  <div class="ui  container">
+    <div class="main">
+<h3>table</h3><br>
+<table class="ui celled table"><!--unstackable去除自适应-->
+  <thead>
+    <tr><th>标题</th>
+    <th>标题</th>
+    <th>标题</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="ui ribbon label">First</div>
+      </td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+    <tr>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+    <tr>
+      <td>Cell</td>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th colspan="3">
+      <div class="ui right floated pagination menu">
+        <a class="icon item">
+          <i class="left chevron icon"></i>
+        </a>
+        <a class="item">1</a>
+        <a class="item">2</a>
+        <a class="item">3</a>
+        <a class="item">4</a>
+        <a class="icon item">
+          <i class="right chevron icon"></i>
+        </a>
+      </div>
+    </th>
+  </tr></tfoot>
+</table>
+
+
+<div class="ui warning message">Adding a classname of <code>ascending</code> or <code>descending</code> to the <code>th</code> will show the user the direction of sort. This example uses a modified version of the kylefox's <a href="https://github.com/kylefox/jquery-tablesort">tablesort plugin</a> to provide the proper class names. </div>
+<table class="ui sortable celled table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>约翰</td>
+      <td>没反应</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>杰米</td>
+      <td class="positive">已审核</td>
+      <td class="warning">必须回答</td>
+    </tr>
+    <tr>
+      <td>吉尔</td>
+      <td class="negative">Denied</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><th>3个 人</th>
+    <th>2个 已审批</th>
+    <th></th>
+  </tr></tfoot>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
